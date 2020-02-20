@@ -1,0 +1,9 @@
+*~
+*.bak
+*.o
+debian/
+*.so
+*.so.[0-9]*
+*.po
+*.a
+*.deb

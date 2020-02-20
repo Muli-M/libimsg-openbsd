@@ -1,0 +1,10 @@
+Origin: Muli
+Package: libimsg-openbsd
+Section: libs
+Priority: optional
+Build-Depends: openbsd-mk
+Maintainer: Maxim Zakharov <zakhma@muli.com.au>
+Description: Imsg IPC library from OpenBSD.
+
+
+
