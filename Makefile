@@ -2,7 +2,7 @@
 
 LIB=	imsg-openbsd
 LIBDIR=	/usr/local/lib
-MANDIR=	/usr/local/man/man
+MANDIR=	/usr/local/man
 MAN=	imsg_init.3
 SRCS=	imsg.c getdtablecount.c freezero.c
 HDRS=	imsg.h

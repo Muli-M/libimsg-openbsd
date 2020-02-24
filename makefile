@@ -1,6 +1,6 @@
 # Makefile for the libimsg-openbsd package
 
-MULI_TAG?=1.0
+MULI_TAG?=1.1
 ARCH=`dpkg --print-architecture`
 
 debian: makefile control_tmpl
@@ -9,7 +9,7 @@ debian: makefile control_tmpl
 	mkdir -p debian/DEBIAN
 	mkdir -p debian/usr/local/include
 	mkdir -p debian/usr/local/lib
-	mkdir -p debian/usr/local/man/man/man3
+	mkdir -p debian/usr/local/man/man3
 	DESTDIR=$(shell pwd)/debian fakeroot bmake -f Makefile install
 
 	# control
