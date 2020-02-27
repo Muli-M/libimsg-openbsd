@@ -4,7 +4,7 @@ MULI_TAG?=1.2
 ARCH=`dpkg --print-architecture`
 
 debian: makefile control_tmpl
-	bmake -m /usr/local/share/openbsd-mk -f Makefile
+	bmake -f Makefile
 	rm -rf debian
 	mkdir -p debian/DEBIAN
 	mkdir -p debian/usr/local/include
@@ -30,4 +30,4 @@ clean:
 	rm -rf debian
 
 .DEFAULT:
-	bmake -m /usr/local/share/openbsd-mk -f Makefile $@
+	bmake -f Makefile $@
