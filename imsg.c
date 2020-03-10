@@ -80,6 +80,9 @@ again:
 		free(ifd);
 		return (-1);
 	}
+#ifdef __linux__
+	errno = 0;
+#endif
 
 	if ((n = recvmsg(ibuf->fd, &msg, 0)) == -1) {
 		if (errno == EINTR)
