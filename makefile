@@ -1,6 +1,6 @@
 # Makefile for the libimsg-openbsd package
 
-MULI_TAG?=1.2
+MULI_TAG?=1.3
 ARCH=`dpkg --print-architecture`
 
 debian: makefile control_tmpl

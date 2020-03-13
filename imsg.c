@@ -73,6 +73,11 @@ imsg_read(struct imsgbuf *ibuf)
 		return (-1);
 
 again:
+#ifndef __linux__
+	/*
+	  linux has no getdtablecount() and there are no cheap way
+	  to check this number.
+	 */
 	if (getdtablecount() + imsg_fd_overhead +
 	    (int)((CMSG_SPACE(sizeof(int))-CMSG_SPACE(0))/sizeof(int))
 	    >= getdtablesize()) {
@@ -80,6 +85,7 @@ again:
 		free(ifd);
 		return (-1);
 	}
+#endif
 #ifdef __linux__
 	errno = 0;
 #endif
