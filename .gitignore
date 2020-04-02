@@ -1,9 +1,12 @@
-*~
+*.a
 *.bak
+*.deb
 *.o
-debian/
+*.po
 *.so
 *.so.[0-9]*
-*.po
-*.a
-*.deb
+*~
+debian/files
+debian/substvars
+debian/tmp/
+shlib_version

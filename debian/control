@@ -1,0 +1,11 @@
+Source: libimsg-openbsd
+Section: libs
+Priority: optional
+Maintainer: Maxim Zakharov <zakhma@muli.com.au>
+Build-Depends: make, bmake, dpkg-dev, git-buildpackage, fakeroot
+Standards-Version: 4.1.4
+
+Package: libimsg-openbsd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Imsg IPC library from OpenBSD.

@@ -1,10 +1,10 @@
-#	Copyright (c) Muli Management P/L, Wahroonga, NSW, Australia
+#	Copyright (c) 2020, Muli Management P/L, Wahroonga, NSW, Australia
 
 LIB=	imsg-openbsd
 LIBDIR=	/usr/local/lib
 MANDIR=	/usr/local/man
 MAN=	imsg_init.3
-SRCS=	imsg.c imsg-buffer.c freezero.c recallocarray.c # getdtablecount.c
+SRCS=	imsg.c imsg-buffer.c freezero.c recallocarray.c
 HDRS=	imsg.h
 HDRDIR=	/usr/local/include
 DEBUG=	-O0 -g
