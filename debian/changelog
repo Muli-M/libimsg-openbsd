@@ -1,0 +1,12 @@
+libimsg-openbsd (1.3) UNRELEASED; urgency=medium
+
+  * 
+  * initial version
+  * fix man pages location
+  * add missed functions
+  * correct build dependencies
+  * reset errno on linux
+  * disable getdtablecount.c as it dowsn't work when chroot() is used
+  * alter packaging; cleanup
+
+ -- Maxim Zakharov <maxime@maxim-MUX>  Thu, 02 Apr 2020 12:52:32 +1100
