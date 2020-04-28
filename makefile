@@ -15,7 +15,7 @@ debian: makefile debian/control Makefile shlib_version
 	DESTDIR=$(shell pwd)/debian/tmp fakeroot bmake -f Makefile install
 
 	# generate changelog from git log
-	gbp dch
+	gbp dch --ignore-branch --git-author
 	sed -i "/UNRELEASED;/s/unknown/${MULI_TAG}/" debian/changelog
 	# generate dependencies
 	dpkg-shlibdeps -l/usr/local/lib debian/tmp/usr/local/lib/libimsg-openbsd.so

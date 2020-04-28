@@ -9,4 +9,4 @@ libimsg-openbsd (1.3) UNRELEASED; urgency=medium
   * disable getdtablecount.c as it dowsn't work when chroot() is used
   * alter packaging; cleanup
 
- -- Maxim Zakharov <maxime@maxim-MUX>  Thu, 02 Apr 2020 12:52:32 +1100
+ -- Maxim Zakharov <5158255+Maxime2@users.noreply.github.com>  Tue, 28 Apr 2020 10:06:27 +1000
