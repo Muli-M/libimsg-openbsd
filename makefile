@@ -23,6 +23,8 @@ debian: makefile debian/control Makefile shlib_version
 	dpkg-gensymbols
 	# generate md5sums file
 	find debian/tmp/ -type f -exec md5sum '{}' + | grep -v DEBIAN | sed s#debian/tmp/## > debian/tmp/DEBIAN/md5sums
+	# generate triggers file
+	echo "activate-noawait ldconfig" > debian/tmp/DEBIAN/triggers
 	# control
 	dpkg-gencontrol -v${MULI_TAG}
 
